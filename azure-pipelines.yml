@@ -21,6 +21,6 @@ steps:
     location: 'West Europe'
     templateLocation: 'URL of the file'
     csmFileLink: 'https://raw.githubusercontent.com/Octabrain77/DeployARMvm-repo/main/createvm/createvm.json?token=GHSAT0AAAAAACC3L7HPBW3FWVNVB4LNSIJOZDLD5KA'
-    #overrideParameters: '-adminUsername $(admuser) -adminPassword $(admpwd)'
+    overrideParameters: '-adminUsername $(admuser) -adminPassword $(admpwd)'
     deploymentMode: 'Incremental'
     deploymentName: 'DeployPipelineTemplate'
