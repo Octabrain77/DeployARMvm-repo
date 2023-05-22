@@ -20,7 +20,7 @@ steps:
     resourceGroupName: 'AzureRmPipeline-rg'
     location: 'West Europe'
     templateLocation: 'URL of the file'
-    csmFileLink: 'https://raw.githubusercontent.com/Octabrain77/DeployARMvm-repo/main/createvm/createvm.json?token=GHSAT0AAAAAACC3L7HPL23ZLVTZEO6EGDZYZDHQMVA'
+    csmFileLink: 'https://raw.githubusercontent.com/Octabrain77/DeployARMvm-repo/main/createvm/createvm.json?token=GHSAT0AAAAAACC3L7HPBW3FWVNVB4LNSIJOZDLD5KA'
     overrideParameters: '-projectName DeployARMvm'
     deploymentMode: 'Incremental'
     deploymentName: 'DeployPipelineTemplate'
