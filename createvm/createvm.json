@@ -47,6 +47,18 @@
         "description": "Allocation method for the Public IP used to access the Virtual Machine."
       }
     },
+    "storageAccountType": {
+      "type": "string",
+      "defaultValue": "Standard_LRS",
+      "allowedValues": [
+        "Standard_LRS",
+        "StandardSSD_LRS",
+        "Premium_LRS"
+      ],
+      "metadata": {
+        "description": "SKU for Hard Disk drives type."
+      }
+    },
     "publicIpSku": {
       "type": "string",
       "defaultValue": "Basic",
@@ -270,7 +282,7 @@
           "osDisk": {
             "createOption": "FromImage",
             "managedDisk": {
-              "storageAccountType": "StandardSSD_LRS"
+              "storageAccountType": "[parameters('storageAccountType')]"
             }
           },
           "dataDisks": [
